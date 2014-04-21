@@ -16,7 +16,8 @@
   <div class="row">
     <div class="col-xs-12">
       <div class="row">
-        <div class="col-xs-4 animated fadeInDown" ng-repeat="result in itunesResults.results">
+        <div ng-show="itunesResults.results!=null">Filter: <input ng-model="withinFilter"/></div>
+        <div class="col-xs-4 animated fadeInDown" ng-repeat="result in itunesResults.results | filter:withinFilter">
           <div class="row search-result">
             <div class="col-xs-4">
               <a ng-href="{{result.previewUrl}}" href="#" class="pull-left">

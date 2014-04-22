@@ -26,3 +26,7 @@ Implement a basic directive to display a cost bar line (higher cost, wider the l
 ## step5 (branch)
 
 Show basic filtering (filter the results of the iTunes data).
+
+## step6 (branch)
+
+Unit testing of directive created in step4 and added e2e test of iTunes API view - all based on angular seed out of the box unit (Jasmine/Karma) and e2e testing (Jasmine/Protractor)
